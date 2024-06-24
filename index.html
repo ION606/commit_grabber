@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Commit Fetcher</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Fetch GitHub Commits</h1>
+    <div class="container">
+        <div class="input-section">
+            <label for="email">GitHub Username or Email:</label>
+            <input type="text" id="email" placeholder="username or email"><br><br>
+
+            <label for="username">GitHub Username:</label>
+            <input type="text" id="username" placeholder="Username"><br><br>
+
+            <label for="repo">Repository Name:</label>
+            <input type="text" id="repo" placeholder="Repository"><br><br>
+
+            <label for="sinceDate">Commits since:</label>
+            <input type="date" id="sinceDate"><br><br>
+
+            <label for="private">Private Repository?</label>
+            <input type="checkbox" id="private" onchange="toggleTokenInput()"><br><br>
+
+            <div id="tokenDiv" class="hidden">
+                <label for="token">Access Token:</label>
+                <input type="password" id="token" placeholder="GitHub Access Token"><br><br>
+            </div>
+            <button onclick="fetchCommits()">Fetch Commits</button>
+        </div>
+        <div class="commit-section">
+            <h2>Commit Links:</h2>
+            <ul id="commitList">
+                <p>Nothing yet...</p>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

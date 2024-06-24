@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 20px;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #0a66c2;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0a66c2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+#commitList {
+    overflow: scroll;
+    overflow-y: auto;
+    max-height: 30em;
+    border: grey solid 1px;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-section {
+    flex: 1 1 300px;
+}
+
+.commit-section {
+    flex: 1 1 300px;
+    margin-left: 20px;
+}
