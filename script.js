@@ -71,3 +71,7 @@ async function fetchCommits() {
         console.error(error);
     }
 }
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}

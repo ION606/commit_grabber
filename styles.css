@@ -83,3 +83,32 @@ a:hover {
     flex: 1 1 300px;
     margin-left: 20px;
 }
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+body.dark-mode h1,
+body.dark-mode a {
+    color: #f4f4f9;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="password"],
+body.dark-mode input[type="date"],
+body.dark-mode button {
+    background-color: #555;
+    color: #f4f4f9;
+    border: 1px solid #777;
+}
+
+body.dark-mode button:hover {
+    background-color: #666;
+}
+
+body.dark-mode #commitList {
+    border: grey solid 1px;
+    background-color: #444;
+    color: #f4f4f9;
+}
